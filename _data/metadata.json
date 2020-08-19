@@ -1,0 +1,16 @@
+{
+  "title": "placeholder",
+  "url": "https://keanucode.vercel.app/",
+  "description": "I write about Software Development.",
+  "feed": {
+    "subtitle": "I write about Software Development.",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "url": "https://keanucode.vercel.app/feed/feed.xml",
+    "id": "https://keanucode.vercel.app/"
+  },
+  "author": {
+    "name": "Lexi Sother",
+    "email": "lexisoth2005@gmail.com"
+  }
+}

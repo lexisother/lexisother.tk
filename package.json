@@ -17,11 +17,11 @@
     "url": "https://lexisother.tk"
   },
   "contributors": [
-      {
-          "name": "Keanu Timmermans",
-          "email": "keanutimmermans8@gmail.com",
-          "url": "https://keanucode.ml"
-      }
+    {
+      "name": "Keanu Timmermans",
+      "email": "keanutimmermans8@gmail.com",
+      "url": "https://keanucode.ml"
+    }
   ],
   "license": "MIT",
   "bugs": {
