@@ -1,0 +1,39 @@
+{
+  "name": "lexisother.tk",
+  "version": "1.0.0",
+  "description": "My website!",
+  "scripts": {
+    "build": "eleventy",
+    "watch": "eleventy --watch",
+    "debug": "DEBUG=* eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lexisother/lexisother.tk"
+  },
+  "author": {
+    "name": "Lexi Sother",
+    "email": "lexisoth2005@gmail.com",
+    "url": "https://lexisother.tk"
+  },
+  "contributors": [
+      {
+          "name": "Keanu Timmermans",
+          "email": "keanutimmermans8@gmail.com",
+          "url": "https://keanucode.ml"
+      }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lexisother/lexisother.tk/issues"
+  },
+  "homepage": "https://github.com/lexisother/lexisother.tk#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.9.0",
+    "@11ty/eleventy-plugin-rss": "^1.0.7",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3",
+    "luxon": "^1.12.0",
+    "markdown-it": "^8.4.2",
+    "markdown-it-anchor": "^5.0.2"
+  }
+}
