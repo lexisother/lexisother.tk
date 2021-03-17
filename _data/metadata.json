@@ -1,13 +1,13 @@
 {
-  "title": "placeholder",
-  "url": "https://keanucode.vercel.app/",
-  "description": "I write about Software Development.",
+  "title": "alyxia sother",
+  "url": "https://lexisother.tk/",
+  "description": "nothing to see here.",
   "feed": {
-    "subtitle": "I write about Software Development.",
+    "subtitle": "nothing to see here.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "url": "https://keanucode.vercel.app/feed/feed.xml",
-    "id": "https://keanucode.vercel.app/"
+    "url": "https://lexisother.tk/feed/feed.xml",
+    "id": "https://lexisother.tk/"
   },
   "author": {
     "name": "Lexi Sother",
