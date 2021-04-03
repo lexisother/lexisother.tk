@@ -13,14 +13,13 @@
     <link rel="stylesheet" href="/resources/demos/style.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="icon" href="http://keanumedia.duckdns.org/files/favicon.ico">
     <script>
     window.onload = function () {
       const darkmode = new Darkmode({
         saveInCookies: true,
         label: '🌓',
         autoMatchOsTheme: true
-      });
-      darkmode.showWidget();
       setTimeout(1000);
       document.getElementsByTagName('button')[0].setAttribute('title', "Toggle Dark Mode");
     }
