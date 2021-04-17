@@ -4,13 +4,21 @@
     <h3>Socials</h3>
     <ul>
       <li>
+        <i class="fab fa-github fa-lg"></i>&nbsp;
         <a href="https://github.com/lexisother" target="_blank" rel="noopener"
-          ><i class="fab fa-github fa-lg"></i> GitHub</a
+          >GitHub</a
         >
       </li>
       <li>
+        <i class="fab fa-github fa-lg"></i>&nbsp;
+        <a href="https://github.com/NovaGM" target="_blank" rel="noopener"
+          >NovaGM</a
+        >
+      </li>
+      <li>
+        <i class="fab fa-twitter fa-lg"></i>&nbsp;
         <a href="https://twitter.com/lexisother" target="_blank" rel="noopener"
-          ><i class="fab fa-twitter fa-lg"></i> Twitter</a
+          >Twitter</a
         >
       </li>
     </ul>

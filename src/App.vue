@@ -7,12 +7,16 @@
 </template>
 
 <style lang="scss">
+body {
+  background-color: #181a1b;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #aec2d3;
 }
 
 #nav {
@@ -20,7 +24,7 @@
 
   a {
     font-weight: bold;
-    color: #2c3e50;
+    color: #aec2d3;
 
     &.router-link-exact-active {
       color: #42b983;
