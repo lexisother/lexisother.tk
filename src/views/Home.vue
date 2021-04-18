@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/angery.png" />
+    <img alt="angery alyx" src="../assets/angery.png" />
     <Header msg="Alyxia Sother" />
     <Content />
   </div>
