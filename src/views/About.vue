@@ -1,21 +1,17 @@
 <template>
   <div class="about">
     <h1>About me</h1>
-    <vue-marked :source="content"></vue-marked>
+    <div v-html="content"></div>
   </div>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
-import Markdown from "@hrwg/vue-marked";
+import content from "@/assets/test.md";
 
 @Options({
   name: "about",
-  components: {
-    "vue-marked": Markdown,
-  },
   data() {
-    const content = process.env.ABOUT_CONTENT;
     return {
       content,
     };

@@ -16,16 +16,16 @@
 //   },
 // };
 
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-let fs = require("fs");
-
-const AboutContent = fs.readFileSync("./src/assets/test.md");
-
 module.exports = {
   chainWebpack: (config) => {
-    config.plugin("define").tap((definitions) => {
-      definitions[0]["process.env"]["ABOUT_CONTENT"] = AboutContent.toString();
-      return definitions;
-    });
+    config.module
+      .rule("md")
+      .test(/\.md$/)
+      .use("html-loader")
+      .loader("html-loader")
+      .end()
+      .use("markdown-loader")
+      .loader("markdown-loader")
+      .end();
   },
 };
