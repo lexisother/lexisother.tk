@@ -7,7 +7,7 @@
 
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
-import content from "@/assets/test.md";
+import content from "@/assets/about.md";
 
 @Options({
   name: "about",
