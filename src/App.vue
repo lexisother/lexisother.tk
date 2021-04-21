@@ -19,6 +19,12 @@ body {
   color: #aec2d3;
 }
 
+#app pre {
+  text-align: start;
+  margin: 0 auto;
+  display: inline-block;
+}
+
 #nav {
   padding: 30px;
 
