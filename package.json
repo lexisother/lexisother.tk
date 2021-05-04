@@ -1,0 +1,60 @@
+{
+  "name": "lexisother.tk",
+  "private": true,
+  "engines": {
+    "node": "^10.0.0"
+  },
+  "dependencies": {
+    "@octokit/rest": "^18.5.2",
+    "date-fns": "^2.21.1",
+    "gatsby": "^3.3.0",
+    "gatsby-plugin-canonical-urls": "^3.3.0",
+    "gatsby-plugin-catch-links": "^3.3.0",
+    "gatsby-plugin-feed": "^3.3.0",
+    "gatsby-plugin-gtag": "^1.0.13",
+    "gatsby-plugin-image": "^1.3.0",
+    "gatsby-plugin-manifest": "^3.3.0",
+    "gatsby-plugin-netlify": "^3.3.0",
+    "gatsby-plugin-offline": "^4.3.0",
+    "gatsby-plugin-react-helmet": "^4.3.0",
+    "gatsby-plugin-robots-txt": "^1.5.6",
+    "gatsby-plugin-sharp": "^3.3.0",
+    "gatsby-plugin-sitemap": "^3.3.0",
+    "gatsby-plugin-typegen": "^2.2.4",
+    "gatsby-remark-images": "^4.2.0",
+    "gatsby-remark-images-zoom": "^1.1.0",
+    "gatsby-remark-prismjs": "^4.2.0",
+    "gatsby-remark-relative-images": "^2.0.2",
+    "gatsby-remark-smartypants": "^3.2.0",
+    "gatsby-source-filesystem": "^3.3.0",
+    "gatsby-transformer-json": "^3.3.0",
+    "gatsby-transformer-remark": "^3.2.0",
+    "gatsby-transformer-sharp": "^3.3.0",
+    "prismjs": "^1.23.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.3",
+    "@types/react-helmet": "^6.1.1",
+    "eslint": "^7.24.0",
+    "eslint-config-dmitmel": "github:dmitmel/eslint-config-dmitmel",
+    "eslint-config-prettier": "^8.2.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.2.1",
+    "prettier-plugin-organize-imports": "^1.1.1",
+    "typescript": "^4.2.4"
+  },
+  "scripts": {
+    "lint": "eslint src --ext .js,.jsx,.ts,.tsc --ignore-path .gitignore",
+    "pull-external-data": "node ./pullExternalData.js",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "clean": "gatsby clean"
+  }
+}
