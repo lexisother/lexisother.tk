@@ -7,7 +7,7 @@
   "dependencies": {
     "@octokit/rest": "^18.5.2",
     "date-fns": "^2.21.1",
-    "gatsby": "^3.3.0",
+    "gatsby": "^3.4.1",
     "gatsby-plugin-canonical-urls": "^3.3.0",
     "gatsby-plugin-catch-links": "^3.3.0",
     "gatsby-plugin-feed": "^3.3.0",

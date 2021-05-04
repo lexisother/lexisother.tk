@@ -35,17 +35,17 @@ module.exports = {
       context: null
     });
 
-    actions.createPage({
-      path: '/blog',
-      component: path.resolve('./src/Blog.tsx'),
-      context: null
-    });
+    // actions.createPage({
+    //   path: '/blog',
+    //   component: path.resolve('./src/Blog.tsx'),
+    //   context: null
+    // });
 
-    actions.createPage({
-      path: '/projects',
-      component: path.resolve('./src/Projects.tsx'),
-      context: null
-    });
+    // actions.createPage({
+    //   path: '/projects',
+    //   component: path.resolve('./src/Projects.tsx'),
+    //   context: null
+    // });
 
     // Generate pages for blog posts
     const queryResult = await graphql(`
@@ -62,25 +62,25 @@ module.exports = {
 
     if (queryResult.errors) throw queryResult.errors;
 
-    /**
-     * @type {GatsbyTypes.MarkdownRemarkConnection}
-     */
-    const blogPostConnection = queryResult.data.allMarkdownRemark;
+    // /**
+    //  * @type {GatsbyTypes.MarkdownRemarkConnection}
+    //  */
+    // const blogPostConnection = queryResult.data.allMarkdownRemark;
 
-    blogPostConnection.nodes.forEach((node) => {
-      if (!node.fields) {
-        return;
-      }
+    // blogPostConnection.nodes.forEach((node) => {
+    //   if (!node.fields) {
+    //     return;
+    //   }
 
-      const slug = node.fields.slug;
+    //   const slug = node.fields.slug;
 
-      const coverImagePath = `blog/${slug}/Cover.png`;
+    //   const coverImagePath = `blog/${slug}/Cover.png`;
 
-      actions.createPage({
-        path: '/blog/' + slug,
-        component: path.resolve('./src/BlogPost.tsx'),
-        context: { slug, coverImagePath }
-      });
-    });
+    //   actions.createPage({
+    //     path: '/blog/' + slug,
+    //     component: path.resolve('./src/BlogPost.tsx'),
+    //     context: { slug, coverImagePath }
+    //   });
+    // });
   }
 };
