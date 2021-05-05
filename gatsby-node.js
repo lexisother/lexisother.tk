@@ -43,11 +43,11 @@ module.exports = {
             context: null
         });
 
-        // actions.createPage({
-        //   path: '/blog',
-        //   component: path.resolve('./src/Blog.tsx'),
-        //   context: null
-        // });
+        actions.createPage({
+          path: '/blog',
+          component: path.resolve('./src/Blog.tsx'),
+          context: null
+        });
 
         actions.createPage({
             path: "/projects",
