@@ -1,41 +1,41 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 // @ts-check
 
-const { Octokit } = require('@octokit/rest');
-const fs = require('fs');
-const path = require('path');
+const {Octokit} = require("@octokit/rest");
+const fs = require("fs");
+const path = require("path");
 
-const outputDirPath = path.resolve('./data/projects/');
+const outputDirPath = path.resolve("./data/projects/");
 
 async function run() {
-  const github = new Octokit();
+    const github = new Octokit();
 
-  const { data: repos } = await github.repos.listForUser({
-    username: 'lexisother',
-    type: 'owner',
-    per_page: 100,
-    sort: 'pushed'
-  });
+    const {data: repos} = await github.repos.listForUser({
+        username: "lexisother",
+        type: "owner",
+        per_page: 100,
+        sort: "pushed"
+    });
 
-  const projects = repos.map((repo) => ({
-    name: repo.name,
-    url: repo.html_url,
-    description: repo.description,
-    stars: repo.stargazers_count || 0,
-    language: repo.language,
-    licensename: repo.license?.name || 'No License',
-    licenseurl: repo.license?.url || '',
-    forked: repo.fork,
-    updated: repo.pushed_at
-  }));
+    const projects = repos.map((repo) => ({
+        name: repo.name,
+        url: repo.html_url,
+        description: repo.description,
+        stars: repo.stargazers_count || 0,
+        language: repo.language,
+        licensename: repo.license?.name || "No License",
+        licenseurl: repo.license?.url || "",
+        forked: repo.fork,
+        updated: repo.pushed_at
+    }));
 
-  projects.forEach((project) => {
-    const json = JSON.stringify(project, null, 2) + '\n';
-    const filePath = path.resolve(outputDirPath, `${project.name}.json`);
+    projects.forEach((project) => {
+        const json = JSON.stringify(project, null, 2) + "\n";
+        const filePath = path.resolve(outputDirPath, `${project.name}.json`);
 
-    fs.writeFileSync(filePath, json);
-    console.log(`Pulled ${project.name}.`);
-  });
+        fs.writeFileSync(filePath, json);
+        console.log(`Pulled ${project.name}.`);
+    });
 }
 
 run();
