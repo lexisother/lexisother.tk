@@ -1,9 +1,6 @@
 name: CI
 
-on:
-  push:
-    branches:
-      - 'master'
+on: ['push']
 
 jobs:
   deploy:
@@ -18,7 +15,7 @@ jobs:
           node-version: 12
 
       - name: Pull dependencies
-        run: npm ci --no-audit
+        run: npm i
 
       - name: Lint
         run: npm run lint
