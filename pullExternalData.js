@@ -23,6 +23,8 @@ async function run() {
     description: repo.description,
     stars: repo.stargazers_count || 0,
     language: repo.language,
+    licensename: repo.license?.name || 'No License',
+    licenseurl: repo.license?.url || '',
     forked: repo.fork,
     updated: repo.pushed_at
   }));

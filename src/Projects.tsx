@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 import { FiPackage, FiStar } from 'react-icons/fi';
-import { GoRepoForked } from 'react-icons/go';
+import { GoRepoForked, GoLaw } from 'react-icons/go';
 import Link from './shared/Link';
 import Page from './shared/Page';
 
@@ -14,6 +14,8 @@ export const query = graphql`
         description
         stars
         language,
+        licensename,
+        licenseurl,
         forked,
         updated
       }
@@ -33,6 +35,8 @@ export default function ProjectsPage({ data }: ProjectsPageProps) {
       description: node.description!,
       stars: node.stars!,
       language: node.language!,
+      licensename: node.licensename!,
+      licenseurl: node.licenseurl!,
       forked: node.forked!,
       updated: node.updated!
     }))
@@ -71,6 +75,19 @@ export default function ProjectsPage({ data }: ProjectsPageProps) {
             <div className="label">
               <FiPackage strokeWidth={1} />
               <div>{project.language}</div>
+            </div>
+
+            <div className="label">
+                <GoLaw strokeWidth={1} fill="#8B949E" />
+                {project.licenseurl
+                  ? <div>
+                      <Link href={project.licenseurl}>{project.licensename}</Link>
+                    </div>
+                  : <div>
+                      {project.licensename}
+                    </div>
+                }
+                {/* <div><Link href={project.licenseurl}>{project.licensename}</Link></div> */}
             </div>
           </div>
         </div>
