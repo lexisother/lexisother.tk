@@ -44,6 +44,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^6.0.0",
     "prettier": "^2.2.1",
     "prettier-plugin-organize-imports": "^1.1.1",
     "typescript": "^4.2.4"
@@ -53,6 +54,8 @@
     "pull-external-data": "node ./pullExternalData.js",
     "start": "gatsby develop",
     "build": "gatsby build",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "format": "prettier --write **/*",
+    "postinstall": "husky install"
   }
 }
