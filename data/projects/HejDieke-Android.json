@@ -3,5 +3,9 @@
   "url": "https://github.com/lexisother/HejDieke-Android",
   "description": "First Android project written in Kotlin",
   "stars": 0,
-  "language": "Kotlin"
+  "language": "Kotlin",
+  "licensename": "Apache License 2.0",
+  "licenseurl": "https://api.github.com/licenses/apache-2.0",
+  "forked": false,
+  "updated": "2020-02-07T13:13:41Z"
 }

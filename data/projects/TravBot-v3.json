@@ -3,5 +3,9 @@
   "url": "https://github.com/lexisother/TravBot-v3",
   "description": "Rewrite of TravBot to Discord.JS v12 in TypeScript. Revision 4 of TravBot, version number 3.",
   "stars": 0,
-  "language": "TypeScript"
+  "language": "TypeScript",
+  "licensename": "MIT License",
+  "licenseurl": "https://api.github.com/licenses/mit",
+  "forked": true,
+  "updated": "2021-04-26T17:53:58Z"
 }

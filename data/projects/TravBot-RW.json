@@ -3,5 +3,9 @@
   "url": "https://github.com/lexisother/TravBot-RW",
   "description": "Rewrite of TravBot",
   "stars": 1,
-  "language": "JavaScript"
+  "language": "JavaScript",
+  "licensename": "Apache License 2.0",
+  "licenseurl": "https://api.github.com/licenses/apache-2.0",
+  "forked": false,
+  "updated": "2020-04-14T07:55:15Z"
 }

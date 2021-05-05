@@ -3,5 +3,9 @@
   "url": "https://github.com/lexisother/initpkg",
   "description": "A personal CLI to init my projects with.",
   "stars": 0,
-  "language": "JavaScript"
+  "language": "JavaScript",
+  "licensename": "MIT License",
+  "licenseurl": "https://api.github.com/licenses/mit",
+  "forked": true,
+  "updated": "2020-07-20T08:12:22Z"
 }

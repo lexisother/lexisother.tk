@@ -3,5 +3,9 @@
   "url": "https://github.com/lexisother/LemuriaBot",
   "description": "Discord bot written in TypeScript with Discord.JS",
   "stars": 0,
-  "language": "TypeScript"
+  "language": "TypeScript",
+  "licensename": "Apache License 2.0",
+  "licenseurl": "https://api.github.com/licenses/apache-2.0",
+  "forked": false,
+  "updated": "2021-04-21T19:04:17Z"
 }

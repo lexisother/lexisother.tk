@@ -3,5 +3,9 @@
   "url": "https://github.com/lexisother/Telegram-Emotes",
   "description": "Telegram bot for sending Discord emotes from TravBot's registry.",
   "stars": 0,
-  "language": "TypeScript"
+  "language": "TypeScript",
+  "licensename": "Apache License 2.0",
+  "licenseurl": "https://api.github.com/licenses/apache-2.0",
+  "forked": false,
+  "updated": "2021-04-22T14:33:48Z"
 }

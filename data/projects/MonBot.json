@@ -3,5 +3,9 @@
   "url": "https://github.com/lexisother/MonBot",
   "description": "Discord.py bot for @MonikaTeau's Discord server",
   "stars": 0,
-  "language": "Python"
+  "language": "Python",
+  "licensename": "MIT License",
+  "licenseurl": "https://api.github.com/licenses/mit",
+  "forked": false,
+  "updated": "2020-07-22T20:22:34Z"
 }

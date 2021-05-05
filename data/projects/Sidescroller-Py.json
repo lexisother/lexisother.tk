@@ -3,5 +3,9 @@
   "url": "https://github.com/lexisother/Sidescroller-Py",
   "description": "A sidescroller-esc game boilerplate written in Python",
   "stars": 0,
-  "language": "Python"
+  "language": "Python",
+  "licensename": "Apache License 2.0",
+  "licenseurl": "https://api.github.com/licenses/apache-2.0",
+  "forked": false,
+  "updated": "2020-02-13T19:35:54Z"
 }
