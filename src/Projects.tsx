@@ -14,7 +14,8 @@ export const query = graphql`
         description
         stars
         language,
-        forked
+        forked,
+        updated
       }
     }
   }
@@ -32,9 +33,10 @@ export default function ProjectsPage({ data }: ProjectsPageProps) {
       description: node.description!,
       stars: node.stars!,
       language: node.language!,
-      forked: node.forked!
+      forked: node.forked!,
+      updated: node.updated!
     }))
-    .sort((a, b) => b.stars - a.stars)
+    .sort((a, b) => Date.parse(b.updated) - Date.parse(a.updated))
     .filter(p => p.name !== 'lexisother');
 
   return (
