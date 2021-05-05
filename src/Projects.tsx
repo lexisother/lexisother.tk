@@ -1,6 +1,7 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 import { FiPackage, FiStar } from 'react-icons/fi';
+import { GoRepoForked } from 'react-icons/go';
 import Link from './shared/Link';
 import Page from './shared/Page';
 
@@ -12,7 +13,8 @@ export const query = graphql`
         url
         description
         stars
-        language
+        language,
+        forked
       }
     }
   }
@@ -29,7 +31,8 @@ export default function ProjectsPage({ data }: ProjectsPageProps) {
       url: node.url!,
       description: node.description!,
       stars: node.stars!,
-      language: node.language!
+      language: node.language!,
+      forked: node.forked!
     }))
     .sort((a, b) => b.stars - a.stars)
     .filter(p => p.name !== 'lexisother');
@@ -51,6 +54,13 @@ export default function ProjectsPage({ data }: ProjectsPageProps) {
           <div className="entry-description">{project.description}</div>
 
           <div className="entry-info">
+            {project.forked &&
+              <div className="label">
+                <GoRepoForked strokeWidth={1} fill="#8B949E" />
+                <div>Fork</div>
+              </div>
+            }
+            
             <div className="label">
               <FiStar strokeWidth={1} fill="#ecc94b" />
               <div>{project.stars}</div>

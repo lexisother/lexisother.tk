@@ -22,7 +22,8 @@ async function run() {
     url: repo.html_url,
     description: repo.description,
     stars: repo.stargazers_count || 0,
-    language: repo.language
+    language: repo.language,
+    forked: repo.fork
   }));
 
   projects.forEach((project) => {
