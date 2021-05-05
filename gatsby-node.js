@@ -73,7 +73,7 @@ module.exports = {
             const coverImagePath = `blog/${slug}/Cover.png`;
 
             actions.createPage({
-                path: `/blog/${  slug}`,
+                path: `/blog/${slug}`,
                 component: path.resolve("./src/BlogPost.tsx"),
                 context: {slug, coverImagePath}
             });

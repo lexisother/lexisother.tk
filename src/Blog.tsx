@@ -54,7 +54,7 @@ export default function BlogPage({data}: BlogPageProps) {
             <div className="section-prelude">
                 If you want to know when I post a new article, follow me on{" "}
                 <Link href="https://twitter.com/lexisother">Twitter</Link> or subscribe to the{" "}
-                <Link href="/blog/rss.xml">RSS feed</Link> ✨
+                <Link href="/blog/rss.xml">RSS feed</Link>~ ✨
             </div>
 
             {blogPostsByYear.map(({year, blogPosts}) => (
