@@ -1,7 +1,8 @@
 import {graphql} from "gatsby";
 import React from "react";
+import {AiOutlineFork} from "react-icons/ai";
 import {FiPackage, FiStar} from "react-icons/fi";
-import {GoLaw, GoRepoForked} from "react-icons/go";
+import {GiInjustice} from "react-icons/gi";
 import Link from "./shared/Link";
 import Page from "./shared/Page";
 
@@ -60,7 +61,7 @@ export default function ProjectsPage({data}: ProjectsPageProps) {
                     <div className="entry-info">
                         {project.forked && (
                             <div className="label">
-                                <GoRepoForked strokeWidth={1} fill="#8B949E" />
+                                <AiOutlineFork strokeWidth={1} />
                                 <div>Fork</div>
                             </div>
                         )}
@@ -76,7 +77,7 @@ export default function ProjectsPage({data}: ProjectsPageProps) {
                         </div>
 
                         <div className="label">
-                            <GoLaw strokeWidth={1} fill="#8B949E" />
+                            <GiInjustice strokeWidth={1} />
                             {project.licenseurl ? (
                                 <div>
                                     <Link href={project.licenseurl}>{project.licensename}</Link>
