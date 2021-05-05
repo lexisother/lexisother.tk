@@ -2,7 +2,7 @@
     "name": "lexisother.tk",
     "private": true,
     "engines": {
-        "node": "v14.x"
+        "node": "^14.0.0"
     },
     "dependencies": {
         "@octokit/rest": "^18.5.2",
