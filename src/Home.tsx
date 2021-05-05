@@ -31,10 +31,10 @@ export default function HomePage() {
 
             <div className="social-links">
                 <Link className="social-link" href="https://github.com/lexisother">
-                    <FiGithub />
+                    <FiGithub className="social-icon" />
                 </Link>
                 <Link className="social-link" href="https://twitter.com/lexisother">
-                    <FiTwitter />
+                    <FiTwitter className="social-icon" />
                 </Link>
             </div>
         </Page>
