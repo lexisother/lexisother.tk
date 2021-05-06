@@ -29,7 +29,7 @@ html {
         color: hsl(0, 0%, 98%) !important;
     }
     .social-link:hover > .social-icon {
-        color:rgb(12, 12, 12) !important;
+        color: rgb(12, 12, 12) !important;
     }
 }
 
