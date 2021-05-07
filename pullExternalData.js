@@ -8,9 +8,7 @@ const path = require("path");
 const outputDirPath = path.resolve("./data/projects/");
 
 async function run() {
-    const github = new Octokit({
-        auth: "e598c7a242929281ebfb6a80464db84df962dbe4"
-    });
+    const github = new Octokit();
 
     const {data: repos} = await github.repos.listForUser({
         username: "lexisother",
