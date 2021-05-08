@@ -4,8 +4,9 @@
   "description": "My rewrite of the Heuj Dieke Discord bot by @theikegeraads",
   "stars": 0,
   "language": "JavaScript",
+  "licensekey": "apache-2.0",
   "licensename": "Apache License 2.0",
-  "licenseurl": "https://api.github.com/licenses/apache-2.0",
+  "licenseurl": "http://choosealicense.com/licenses/apache-2.0/",
   "forked": false,
   "updated": "2020-07-19T11:40:17Z"
 }

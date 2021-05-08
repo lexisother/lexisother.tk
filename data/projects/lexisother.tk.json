@@ -4,8 +4,9 @@
   "description": "My personal website project, written in TypeScript with React and Gatsby.",
   "stars": 0,
   "language": "TypeScript",
+  "licensekey": "mit",
   "licensename": "MIT License",
-  "licenseurl": "https://api.github.com/licenses/mit",
+  "licenseurl": "http://choosealicense.com/licenses/mit/",
   "forked": false,
-  "updated": "2021-05-05T19:16:27Z"
+  "updated": "2021-05-07T14:53:08Z"
 }
