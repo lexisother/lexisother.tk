@@ -15,3 +15,9 @@ export function trimEnd(str: string, end: string): string {
 
     return temp;
 }
+
+export interface BuildInfo {
+    siteBuildMetadata: {
+        buildTime: string;
+    };
+}

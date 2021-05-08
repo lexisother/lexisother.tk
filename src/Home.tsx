@@ -1,12 +1,14 @@
-import {differenceInYears} from "date-fns";
+import {differenceInYears, format as formatDate} from "date-fns";
 import {StaticImage} from "gatsby-plugin-image";
 import React from "react";
 import {FiGithub, FiTwitter} from "react-icons/fi";
 import Link from "./shared/Link";
 import Page from "./shared/Page";
+import BuildData from "./shared/SiteBuildData";
 
 export default function HomePage() {
     const myAge = differenceInYears(new Date(), new Date(2005, 12, 29));
+    const buildData = BuildData();
 
     return (
         <Page>
@@ -37,6 +39,10 @@ export default function HomePage() {
                     <FiTwitter className="social-icon" />
                 </Link>
             </div>
+            <footer>
+                <br />
+                Site built on {formatDate(Date.parse(buildData.buildTime), "PPPP 'at' ppp")}
+            </footer>
         </Page>
     );
 }
