@@ -44,6 +44,12 @@ module.exports = {
             context: null
         });
 
+        actions.createPage({
+            path: "/plugins",
+            component: path.resolve("./src/PluginInfo.tsx"),
+            context: null
+        });
+
         // Generate pages for blog posts
         const queryResult = await graphql(`
             query {
