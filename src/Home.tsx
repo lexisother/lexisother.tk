@@ -8,6 +8,7 @@ import BuildData from "./shared/SiteBuildData";
 
 export default function HomePage() {
     const myAge = differenceInYears(new Date(), new Date(2005, 12, 29));
+
     const buildData = BuildData();
 
     return (
@@ -26,7 +27,24 @@ export default function HomePage() {
             <hr />
 
             <div>
-                <p>Hi! I'm Alyxia Sother, and I'm a {myAge} y/o hobbyist software developer.</p>
+                <p>
+                    Hi! I'm Alyxia, known online as Lexi. I'm a {myAge} y/o hobbyist software developer based in the
+                    Netherlands.
+                </p>
+
+                <p>
+                    Most of my work is in TypeScript, but every now and then I play around with Python. I'm mostly
+                    interested in Discord bot development / client modifications, and web applications.
+                </p>
+
+                <p>
+                    Although my work isn't all that professional, aside from software development, I'm also into
+                    composing music, playing the piano and guitar and photography.
+                </p>
+
+                <p>
+                    Some info about my skills can be found <Link href="skills">here</Link>.
+                </p>
             </div>
 
             <hr />
@@ -35,10 +53,12 @@ export default function HomePage() {
                 <Link className="social-link" href="https://github.com/lexisother">
                     <FiGithub className="social-icon" />
                 </Link>
+
                 <Link className="social-link" href="https://twitter.com/lexisother">
                     <FiTwitter className="social-icon" />
                 </Link>
             </div>
+
             <footer>
                 <br />
                 Site built on {formatDate(Date.parse(buildData.buildTime), "PPPP 'at' ppp")}
