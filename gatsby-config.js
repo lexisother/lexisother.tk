@@ -33,6 +33,12 @@ module.exports = {
         description: "Alyxia Sother (@lexisother) is a software developer."
     },
 
+    flags: {
+        FAST_DEV: true,
+        PRESERVE_WEBPACK_CACHE: true,
+        PARALLEL_SOURCING: true
+    },
+
     plugins: [
         // Source: file system (data)
         resolvePlugin("gatsby-source-filesystem", {
