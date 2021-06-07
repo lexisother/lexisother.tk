@@ -50,7 +50,7 @@
         "typescript": "^4.2.4"
     },
     "scripts": {
-        "lint": "eslint src --ext .js,.jsx,.ts,.tsc --ignore-path .gitignore",
+        "lint": "eslint src --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore",
         "pull-external-data": "node ./pullExternalData.js",
         "start": "gatsby develop",
         "build": "gatsby build",
