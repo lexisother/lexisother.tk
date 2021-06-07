@@ -58,26 +58,4 @@ export default function InfoPage({data}: InfoPageProps) {
             ))}
         </Page>
     );
-
-    // const buildData = BuildData();
-
-    // return (
-    //     <Page title="Info">
-    //         <div className="section-header">Info</div>
-
-    //         <div className="section-prelude">Here's some info about the website.</div>
-
-    //         <div key="buildDate" className="entry">
-    //             <div className="entry-name">Build Date</div>
-
-    //             {/* <div className="entry-description">
-    //                 Date the site was last built.
-    //             </div> */}
-
-    //             <div className="entry-info">
-    //                 {formatDate(Date.parse(buildData.buildTime), "PPPP | ppp")}
-    //             </div>
-    //         </div>
-    //     </Page>
-    // );
 }
