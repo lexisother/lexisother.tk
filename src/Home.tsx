@@ -58,10 +58,6 @@ export default function HomePage() {
                     Although my work isn't all that professional, aside from software development, I'm also into
                     composing music, playing the piano and guitar and photography.
                 </p>
-
-                <p>
-                    Some info about my skills can be found <Link href="skills">here</Link>.
-                </p>
             </div>
 
             <hr />

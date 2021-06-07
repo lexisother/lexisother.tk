@@ -5,9 +5,9 @@ import "react-tabs/style/react-tabs.css";
 import {genid} from "./infra/utils";
 import Page from "./shared/Page";
 
-export default function SkillsPage() {
+export default function AboutPage() {
     return (
-        <Page title="Skills">
+        <Page title="About">
             <div className="section-header">About me</div>
 
             <div className="section-prelude">

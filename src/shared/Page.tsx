@@ -70,6 +70,10 @@ function Navigation() {
                     Home
                 </Link>
 
+                <Link className="navbar-link" activeClassName="navbar-link--active" activeExact href="/about">
+                    About
+                </Link>
+
                 <Link className="navbar-link" activeClassName="navbar-link--active" href="/blog">
                     Blog
                 </Link>
