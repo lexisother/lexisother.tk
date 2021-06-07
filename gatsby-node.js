@@ -45,6 +45,12 @@ module.exports = {
         });
 
         actions.createPage({
+            path: "/skills",
+            component: path.resolve("./src/Skills.tsx"),
+            context: null
+        });
+
+        actions.createPage({
             path: "/plugins",
             component: path.resolve("./src/PluginInfo.tsx"),
             context: null

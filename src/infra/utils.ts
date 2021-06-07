@@ -16,6 +16,10 @@ export function trimEnd(str: string, end: string): string {
     return temp;
 }
 
+export function genid(): string {
+    return Math.random().toString(36).substring(7);
+}
+
 export interface BuildInfo {
     siteBuildMetadata: {
         buildTime: string;
