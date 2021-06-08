@@ -21,6 +21,9 @@ jobs:
       - name: Pull dependencies
         run: npm i
 
+      - name: Lint
+        run: npm run lint
+
       - name: Update Project files
         run: npm run pull-external-data
 
