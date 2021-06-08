@@ -6,17 +6,17 @@ import {genid} from "./infra/utils";
 import Page from "./shared/Page";
 
 // TODO: Literally everything here has to be moved to another file, it's atrocious to keep it here
-const ListItem = ({item}: {item: Skill}): JSX.Element => (
+const ListItem = ({item}: {item: Data}): JSX.Element => (
     <li>
         <p key={genid()}>
             {item.name} - {item.time}
         </p>
         {item.extra ? (
             <ul>
-                {item.extra.map((language) => (
+                {item.extra.map((extra) => (
                     <li>
                         <p key={genid()}>
-                            {language.name} - {language.time}
+                            {extra.name} - {extra.time}
                         </p>
                     </li>
                 ))}
@@ -34,19 +34,19 @@ const List = ({list}: {list: unknown[]}): JSX.Element => (
     </ul>
 );
 
-interface Skill {
+interface Data {
     name: string;
     time: string;
-    extra?: Item[];
+    extra?: Extra[];
 }
 
-interface Item {
+interface Extra {
     name: string;
     time: string;
 }
 
 // SkillArray of skills displayed with the `List` component
-const skills: Skill[] = [
+const skills: Data[] = [
     {
         name: "Programming",
         time: distance(new Date(2012, 12, 29)),
