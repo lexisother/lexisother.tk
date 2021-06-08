@@ -50,7 +50,7 @@ export default function ProjectsPage({data}: ProjectsPageProps): JSX.Element {
 
             <div className="section-prelude">Here's a list of all my current projects.</div>
 
-            {projects.map((project) => (
+            {projects[0] ? projects.map((project) => (
                 <div key={project.name} className="entry">
                     <div className="entry-name">
                         <Link href={project.url}>{project.name}</Link>
@@ -87,7 +87,7 @@ export default function ProjectsPage({data}: ProjectsPageProps): JSX.Element {
                         </div>
                     </div>
                 </div>
-            ))}
+            )) : <p>There's nothing here! You probably forgot to run <code>pullExternalData.js</code>.</p>}
         </Page>
     );
 }
