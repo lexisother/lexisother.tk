@@ -43,7 +43,7 @@ interface BlogPostPageProps {
     };
 }
 
-export default function BlogPostPage({data}: BlogPostPageProps) {
+export default function BlogPostPage({data}: BlogPostPageProps): JSX.Element {
     const blogPost = {
         id: data.markdownRemark.fields?.slug!,
         title: data.markdownRemark.frontmatter?.title!,

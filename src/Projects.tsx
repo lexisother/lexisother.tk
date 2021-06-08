@@ -4,8 +4,8 @@ import {formatDistanceToNow as distance} from 'date-fns';
 import {AiOutlineFork} from "react-icons/ai";
 import {FiPackage} from "react-icons/fi";
 import {GiInjustice} from "react-icons/gi";
-import Link from "./shared/Link";
-import Page from "./shared/Page";
+import Link from './shared/Link';
+import Page from './shared/Page';
 
 export const query = graphql`
     query {
@@ -29,7 +29,7 @@ interface ProjectsPageProps {
     data: {allProjectsJson: GatsbyTypes.ProjectsJsonConnection};
 }
 
-export default function ProjectsPage({data}: ProjectsPageProps) {
+export default function ProjectsPage({data}: ProjectsPageProps): JSX.Element {
     const projects = [...data.allProjectsJson.nodes]
         .map((node) => ({
             name: node.name!,

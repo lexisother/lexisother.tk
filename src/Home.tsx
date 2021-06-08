@@ -5,11 +5,11 @@ import React, {useEffect, useState} from "react";
 import {FiGithub, FiTwitter} from "react-icons/fi";
 import Link from "./shared/Link";
 import Page from "./shared/Page";
-import BuildData from "./shared/SiteBuildData";
+import getBuildData from "./shared/SiteBuildData";
 
-export default function HomePage() {
+export default function HomePage(): JSX.Element {
     const myAge = differenceInYears(new Date(), new Date(2005, 12, 29));
-    const buildData = BuildData();
+    const buildData = getBuildData();
 
     const [bio, setBio] = useState();
     useEffect(() => {

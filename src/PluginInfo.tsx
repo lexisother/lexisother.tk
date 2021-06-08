@@ -23,7 +23,7 @@ interface InfoPageProps {
     data: {allSitePlugin: GatsbyTypes.SitePluginConnection};
 }
 
-export default function InfoPage({data}: InfoPageProps) {
+export default function InfoPage({data}: InfoPageProps): JSX.Element {
     const total = data.allSitePlugin.totalCount;
     const plugins = [...data.allSitePlugin.nodes].map((node) => ({
         name: node.name!,

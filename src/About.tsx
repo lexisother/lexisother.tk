@@ -5,50 +5,8 @@ import "react-tabs/style/react-tabs.css";
 import {genid} from "./infra/utils";
 import Page from "./shared/Page";
 
-export default function AboutPage() {
-    return (
-        <Page title="About">
-            <div className="section-header">About me</div>
-
-            <div className="section-prelude">
-                This page contains various info about me, from skills to interests, it's all here!
-            </div>
-            <Tabs>
-                <TabList>
-                    <Tab>Info</Tab>
-                    <Tab>Skills</Tab>
-                    <Tab>Interests</Tab>
-                </TabList>
-                <TabPanel>
-                    {/* TODO: Move parts of Home.tsx here and expand upon it */}
-                    <h2>[write stuff about myself here idk]</h2>
-                </TabPanel>
-                <TabPanel>
-                    <div>
-                        <List list={skills} />
-                    </div>
-                </TabPanel>
-                <TabPanel>
-                    {/* TODO: Do the same as `skills` for this one */}
-                    <h2>[list about interests]</h2>
-                </TabPanel>
-            </Tabs>
-        </Page>
-    );
-}
-
-// TODO: Literally everything below this point has to be moved to another file, it's atrocious to keep it here
-
-const List = ({list}: {list: Object[]}) => (
-    <ul>
-        {/* If there's no list, provide an empty array */}
-        {(list || []).map((item: any) => (
-            <ListItem key={genid()} item={item} />
-        ))}
-    </ul>
-);
-
-const ListItem = ({item}: {item: Skill}) => (
+// TODO: Literally everything here has to be moved to another file, it's atrocious to keep it here
+const ListItem = ({item}: {item: Skill}): JSX.Element => (
     <li>
         <p key={genid()}>
             {item.name} - {item.time}
@@ -67,10 +25,19 @@ const ListItem = ({item}: {item: Skill}) => (
     </li>
 );
 
+const List = ({list}: {list: unknown[]}): JSX.Element => (
+    <ul>
+        {/* If there's no list, provide an empty array */}
+        {(list || []).map((item: any) => (
+            <ListItem key={genid()} item={item} />
+        ))}
+    </ul>
+);
+
 interface Skill {
     name: string;
     time: string;
-    extra?: Array<Item>;
+    extra?: Item[];
 }
 
 interface Item {
@@ -79,7 +46,7 @@ interface Item {
 }
 
 // SkillArray of skills displayed with the `List` component
-const skills: Array<Skill> = [
+const skills: Skill[] = [
     {
         name: "Programming",
         time: distance(new Date(2012, 12, 29)),
@@ -117,3 +84,35 @@ const skills: Array<Skill> = [
         ]
     }
 ];
+
+export default function AboutPage(): JSX.Element {
+    return (
+        <Page title="About">
+            <div className="section-header">About me</div>
+
+            <div className="section-prelude">
+                This page contains various info about me, from skills to interests, it's all here!
+            </div>
+            <Tabs>
+                <TabList>
+                    <Tab>Info</Tab>
+                    <Tab>Skills</Tab>
+                    <Tab>Interests</Tab>
+                </TabList>
+                <TabPanel>
+                    {/* TODO: Move parts of Home.tsx here and expand upon it */}
+                    <h2>[write stuff about myself here idk]</h2>
+                </TabPanel>
+                <TabPanel>
+                    <div>
+                        <List list={skills} />
+                    </div>
+                </TabPanel>
+                <TabPanel>
+                    {/* TODO: Do the same as `skills` for this one */}
+                    <h2>[list about interests]</h2>
+                </TabPanel>
+            </Tabs>
+        </Page>
+    );
+}

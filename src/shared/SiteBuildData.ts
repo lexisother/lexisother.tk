@@ -5,7 +5,7 @@ interface SiteBuildData {
     buildTime: string;
 }
 
-export default function BuildData(): SiteBuildData {
+export default function buildData(): SiteBuildData {
     const data: BuildInfo = useStaticQuery(graphql`
         {
             siteBuildMetadata {

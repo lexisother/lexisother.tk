@@ -13,7 +13,7 @@ interface MetaProps {
     rssUrl?: string;
 }
 
-function Meta({title, description, keywords, imageUrl, rssUrl}: MetaProps) {
+function Meta({title, description, keywords, imageUrl, rssUrl}: MetaProps): JSX.Element {
     const siteMetadata = useSiteMetadata();
 
     const defaults = {
@@ -56,7 +56,7 @@ function Meta({title, description, keywords, imageUrl, rssUrl}: MetaProps) {
     );
 }
 
-function Navigation() {
+function Navigation(): JSX.Element {
     return (
         <nav className="navbar">
             <div className="navbar-logo">
@@ -90,7 +90,7 @@ interface PageProps extends MetaProps {
     children: React.ReactNode;
 }
 
-export default function Page({children, ...props}: PageProps) {
+export default function Page({children, ...props}: PageProps): JSX.Element {
     return (
         <div className="page-container">
             <Meta {...props} />

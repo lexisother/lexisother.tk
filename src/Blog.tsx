@@ -27,7 +27,7 @@ interface BlogPageProps {
     data: {allMarkdownRemark: GatsbyTypes.MarkdownRemarkConnection};
 }
 
-export default function BlogPage({data}: BlogPageProps) {
+export default function BlogPage({data}: BlogPageProps): JSX.Element {
     const blogPosts = [...data.allMarkdownRemark.nodes]
         .map((node) => ({
             id: node.fields?.slug!,
