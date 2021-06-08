@@ -1,6 +1,7 @@
 name: CD
 
-on: 
+on:
+  push:
   schedule:
     - cron: '0 0 * * *'
   workflow_dispatch:
@@ -31,3 +32,12 @@ jobs:
           add: 'data/projects'
           message: '[Chore] Update project files'
           push: true
+
+      - name: Build and deploy
+        uses: amondnet/vercel-action@v20.0.0
+        with:
+          vercel-org-id: ${{ secrets.ORG_ID }}
+          vercel-project-id: ${{ secrets.PROJECT_ID }}
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-args: --prod
+          github-comment: false
