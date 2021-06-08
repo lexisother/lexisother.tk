@@ -5,6 +5,10 @@ const {Octokit} = require("@octokit/rest");
 const fs = require("fs");
 const path = require("path");
 
+if (!fs.existsSync(path.resolve('./data/projects/'))) {
+    fs.mkdirSync(path.resolve('./data/projects/'))
+}
+
 const outputDirPath = path.resolve("./data/projects/");
 const files = fs.readdirSync(outputDirPath).map((file) => file.replace(".json", ""));
 console.log(files);
