@@ -1,11 +1,11 @@
+import {formatDistanceToNow as distance} from "date-fns";
 import {graphql} from "gatsby";
 import React from "react";
-import {formatDistanceToNow as distance} from 'date-fns';
 import {AiOutlineFork} from "react-icons/ai";
 import {FiPackage} from "react-icons/fi";
 import {GiInjustice} from "react-icons/gi";
-import Link from './shared/Link';
-import Page from './shared/Page';
+import Link from "./shared/Link";
+import Page from "./shared/Page";
 
 export const query = graphql`
     query {

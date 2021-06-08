@@ -8,7 +8,14 @@ interface LinkProps extends React.HTMLAttributes<HTMLAnchorElement> {
     activeExact?: boolean;
 }
 
-export default function Link({href, target, className, activeClassName, activeExact, ...props}: LinkProps): JSX.Element {
+export default function Link({
+    href,
+    target,
+    className,
+    activeClassName,
+    activeExact,
+    ...props
+}: LinkProps): JSX.Element {
     return (
         <InternalLink
             {...props}
