@@ -1,7 +1,8 @@
 import {graphql} from "gatsby";
 import React from "react";
+import {formatDistanceToNow as distance} from 'date-fns';
 import {AiOutlineFork} from "react-icons/ai";
-import {FiPackage, FiStar} from "react-icons/fi";
+import {FiPackage} from "react-icons/fi";
 import {GiInjustice} from "react-icons/gi";
 import Link from "./shared/Link";
 import Page from "./shared/Page";
@@ -34,7 +35,6 @@ export default function ProjectsPage({data}: ProjectsPageProps) {
             name: node.name!,
             url: node.url!,
             description: node.description!,
-            stars: node.stars!,
             language: node.language!,
             licensename: node.licensename!,
             licenseurl: node.licenseurl!,
@@ -67,11 +67,6 @@ export default function ProjectsPage({data}: ProjectsPageProps) {
                         )}
 
                         <div className="label">
-                            <FiStar strokeWidth={1} fill="#ecc94b" />
-                            <div>{project.stars}</div>
-                        </div>
-
-                        <div className="label">
                             <FiPackage strokeWidth={1} />
                             <div>{project.language}</div>
                         </div>
@@ -85,6 +80,10 @@ export default function ProjectsPage({data}: ProjectsPageProps) {
                             ) : (
                                 <div>{project.licensename}</div>
                             )}
+                        </div>
+
+                        <div className="label">
+                            <div>Last updated {distance(new Date(project.updated))} ago</div>
                         </div>
                     </div>
                 </div>
