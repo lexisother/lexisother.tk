@@ -2,48 +2,8 @@ import {formatDistanceToNow as distance} from "date-fns";
 import React from "react";
 import {Tab, TabList, TabPanel, Tabs} from "react-tabs";
 import "react-tabs/style/react-tabs.css";
-import {genid} from "./infra/utils";
 import Page from "./shared/Page";
-
-// TODO: Literally everything here has to be moved to another file, it's atrocious to keep it here
-const ListItem = ({item}: {item: Data}): JSX.Element => (
-    <li>
-        <p key={genid()}>
-            {item.name} - {item.time}
-        </p>
-        {item.extra ? (
-            <ul>
-                {item.extra.map((extra) => (
-                    <li>
-                        <p key={genid()}>
-                            {extra.name} - {extra.time}
-                        </p>
-                    </li>
-                ))}
-            </ul>
-        ) : null}
-    </li>
-);
-
-const List = ({list}: {list: unknown[]}): JSX.Element => (
-    <ul>
-        {/* If there's no list, provide an empty array */}
-        {(list || []).map((item: any) => (
-            <ListItem key={genid()} item={item} />
-        ))}
-    </ul>
-);
-
-interface Data {
-    name: string;
-    time: string;
-    extra?: Extra[];
-}
-
-interface Extra {
-    name: string;
-    time: string;
-}
+import List, {Data} from './shared/List';
 
 // SkillArray of skills displayed with the `List` component
 const skills: Data[] = [
@@ -100,7 +60,7 @@ export default function AboutPage(): JSX.Element {
                     <Tab>Interests</Tab>
                 </TabList>
                 <TabPanel>
-                    {/* TODO: Move parts of Home.tsx here and expand upon it */}
+                    {/* TODO: #1 Move parts of Home.tsx here and expand upon it */}
                     <h2>[write stuff about myself here idk]</h2>
                 </TabPanel>
                 <TabPanel>
@@ -109,7 +69,7 @@ export default function AboutPage(): JSX.Element {
                     </div>
                 </TabPanel>
                 <TabPanel>
-                    {/* TODO: Do the same as `skills` for this one */}
+                    {/* TODO: #2 Do the same as `skills` for this one */}
                     <h2>[list about interests]</h2>
                 </TabPanel>
             </Tabs>
