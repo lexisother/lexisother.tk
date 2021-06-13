@@ -14,7 +14,7 @@ html {
         background-color: rgb(12, 12, 12);
     }
     hr {
-        background-color: rgba(201, 201, 201, 0.15);
+        background-color: rgba(201, 201, 201, 0.15) !important;
     }
     code {
         background-color: rgb(45, 45, 45) !important;
@@ -23,7 +23,11 @@ html {
         color: hsl(0, 0%, 98%) !important;
     }
     .navbar-link:hover {
-        color: black !important;
+        color: white !important;
+    }
+    .avatar-image {
+        outline: 4px solid white !important;
+        outline-offset: 10px !important;
     }
     .social-icon {
         color: hsl(0, 0%, 98%) !important;
@@ -171,6 +175,8 @@ footer {
 }
 
 .avatar-image {
+    outline: 4px solid black;
+    outline-offset: 10px;
     border-radius: 50%;
 }
 

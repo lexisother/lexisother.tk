@@ -35,11 +35,10 @@ export default function HomePage(): JSX.Element {
                     placeholder="blurred"
                     alt="Alyxia Sother"
                 />
+                <p className="quote">
+                    <i>{bio}</i>
+                </p>
             </figure>
-
-            <p className="quote">
-                <i>{bio}</i>
-            </p>
 
             <hr />
 
