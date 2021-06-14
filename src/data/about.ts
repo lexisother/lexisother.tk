@@ -40,3 +40,30 @@ export const skills: Data[] = [
         ]
     }
 ];
+
+export const interests: Data[] = [
+    {
+        name: "Japanese culture",
+        extra: [
+            {
+                name: "Language, history, etc"
+            }
+        ]
+    },
+    {
+        name: "Video games",
+        extra: [
+            {
+                name: "Rhythm games, puzzle games"
+            }
+        ]
+    },
+    {
+        name: "Music",
+        extra: [
+            {
+                name: "Piano, orchestral, classical, guitar"
+            }
+        ]
+    }
+];

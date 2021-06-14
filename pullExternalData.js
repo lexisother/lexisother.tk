@@ -5,8 +5,8 @@ const {Octokit} = require("@octokit/rest");
 const fs = require("fs");
 const path = require("path");
 
-if (!fs.existsSync(path.resolve('./data/projects/'))) {
-    fs.mkdirSync(path.resolve('./data/projects/'))
+if (!fs.existsSync(path.resolve("./data/projects/"))) {
+    fs.mkdirSync(path.resolve("./data/projects/"));
 }
 
 const outputDirPath = path.resolve("./data/projects/");
@@ -55,7 +55,7 @@ async function run() {
         fs.writeFileSync(filePath, json);
         console.log(`Pulled ${project.name}.`);
     });
-    
+
     files.forEach((file) => {
         fs.rmSync(path.resolve(outputDirPath, `${file}.json`));
         console.log(`Deleted ${file}.`);

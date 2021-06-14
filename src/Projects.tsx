@@ -50,44 +50,50 @@ export default function ProjectsPage({data}: ProjectsPageProps): JSX.Element {
 
             <div className="section-prelude">Here's a list of all my current projects.</div>
 
-            {projects[0] ? projects.map((project) => (
-                <div key={project.name} className="entry">
-                    <div className="entry-name">
-                        <Link href={project.url}>{project.name}</Link>
-                    </div>
-
-                    <div className="entry-description">{project.description}</div>
-
-                    <div className="entry-info">
-                        {project.forked && (
-                            <div className="label">
-                                <AiOutlineFork strokeWidth={1} />
-                                <div>Fork</div>
-                            </div>
-                        )}
-
-                        <div className="label">
-                            <FiPackage strokeWidth={1} />
-                            <div>{project.language}</div>
+            {projects[0] ? (
+                projects.map((project) => (
+                    <div key={project.name} className="entry">
+                        <div className="entry-name">
+                            <Link href={project.url}>{project.name}</Link>
                         </div>
 
-                        <div className="label">
-                            <GiInjustice strokeWidth={1} />
-                            {project.licenseurl ? (
-                                <div>
-                                    <Link href={project.licenseurl}>{project.licensename}</Link>
+                        <div className="entry-description">{project.description}</div>
+
+                        <div className="entry-info">
+                            {project.forked && (
+                                <div className="label">
+                                    <AiOutlineFork strokeWidth={1} />
+                                    <div>Fork</div>
                                 </div>
-                            ) : (
-                                <div>{project.licensename}</div>
                             )}
-                        </div>
 
-                        <div className="label">
-                            <div>Last updated {distance(new Date(project.updated))} ago</div>
+                            <div className="label">
+                                <FiPackage strokeWidth={1} />
+                                <div>{project.language}</div>
+                            </div>
+
+                            <div className="label">
+                                <GiInjustice strokeWidth={1} />
+                                {project.licenseurl ? (
+                                    <div>
+                                        <Link href={project.licenseurl}>{project.licensename}</Link>
+                                    </div>
+                                ) : (
+                                    <div>{project.licensename}</div>
+                                )}
+                            </div>
+
+                            <div className="label">
+                                <div>Last updated {distance(new Date(project.updated))} ago</div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            )) : <p>There's nothing here! You probably forgot to run <code>pullExternalData.js</code>.</p>}
+                ))
+            ) : (
+                <p>
+                    There's nothing here! You probably forgot to run <code>pullExternalData.js</code>.
+                </p>
+            )}
         </Page>
     );
 }

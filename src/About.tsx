@@ -1,9 +1,9 @@
 import React from "react";
 import {Tab, TabList, TabPanel, Tabs} from "react-tabs";
 import "react-tabs/style/react-tabs.css";
+import {interests, skills} from "./data/about";
+import List from "./shared/List";
 import Page from "./shared/Page";
-import List from './shared/List';
-import {skills} from './data/about';
 
 export default function AboutPage(): JSX.Element {
     return (
@@ -15,14 +15,9 @@ export default function AboutPage(): JSX.Element {
             </div>
             <Tabs>
                 <TabList>
-                    <Tab>Info</Tab>
                     <Tab>Skills</Tab>
                     <Tab>Interests</Tab>
                 </TabList>
-                <TabPanel>
-                    {/* TODO: #1 Move parts of Home.tsx here and expand upon it */}
-                    <h2>[write stuff about myself here idk]</h2>
-                </TabPanel>
                 <TabPanel>
                     <div>
                         <List list={skills} />
@@ -30,7 +25,9 @@ export default function AboutPage(): JSX.Element {
                 </TabPanel>
                 <TabPanel>
                     {/* TODO: #2 Do the same as `skills` for this one */}
-                    <h2>[list about interests]</h2>
+                    <div>
+                        <List list={interests} />
+                    </div>
                 </TabPanel>
             </Tabs>
         </Page>
