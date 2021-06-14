@@ -17,6 +17,6 @@ module.exports = initProcess = () => {
                 return new Error(err);
             });
     } else {
-        console.log("No WakaTime API key found.")
+        console.log("No WakaTime API key found.");
     }
 };

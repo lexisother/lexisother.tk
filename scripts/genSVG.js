@@ -1,5 +1,6 @@
 const d3 = require("./d3.v7.min.js");
 const jsdom = require("jsdom");
+const sharp = require("sharp");
 const fs = require("fs");
 const getDesiredStats = require("./gen.js");
 
@@ -92,4 +93,13 @@ module.exports = generateStatsSVG = (statsResponse, duration) => {
         });
 
     fs.writeFileSync("src/images/wakatime.svg", body.html());
+    sharp("src/images/wakatime.svg")
+        .png()
+        .toFile("src/images/wakatime.png")
+        .then(() => {
+            fs.rmSync("src/images/wakatime.svg");
+        })
+        .catch((err) => {
+            console.log(err);
+        });
 };

@@ -32,7 +32,7 @@ export default function AboutPage(): JSX.Element {
                     </div>
                 </TabPanel>
                 <TabPanel>
-                    <StaticImage className="stats-graph" alt="graph" src="./images/wakatime.svg" />
+                    <StaticImage className="stats-graph" alt="graph" src="./images/wakatime.png" />
                 </TabPanel>
             </Tabs>
         </Page>
