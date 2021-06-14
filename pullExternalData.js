@@ -4,6 +4,11 @@
 const {Octokit} = require("@octokit/rest");
 const fs = require("fs");
 const path = require("path");
+const start = require("./scripts/start");
+
+console.log("Generating Wakatime SVG...");
+start();
+console.log("Done.");
 
 if (!fs.existsSync(path.resolve("./data/projects/"))) {
     fs.mkdirSync(path.resolve("./data/projects/"));

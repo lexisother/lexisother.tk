@@ -35,6 +35,9 @@ html {
     .social-link:hover > .social-icon {
         color: rgb(12, 12, 12) !important;
     }
+    .stats-graph {
+        background-color: grey;
+    }
 }
 
 @media only screen and (max-width: 640px) {

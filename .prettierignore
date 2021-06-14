@@ -9,10 +9,12 @@ LICENSE
 public/
 TEMP/
 data/
+scripts/d3.v7.min.js
 src/__generated__/
 src/images/
 .cache/
 .github/
+.vercel/
 *.md
 *.bat
 package-lock.json

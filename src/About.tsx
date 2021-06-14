@@ -1,3 +1,4 @@
+import {StaticImage} from "gatsby-plugin-image";
 import React from "react";
 import {Tab, TabList, TabPanel, Tabs} from "react-tabs";
 import "react-tabs/style/react-tabs.css";
@@ -17,6 +18,7 @@ export default function AboutPage(): JSX.Element {
                 <TabList>
                     <Tab>Skills</Tab>
                     <Tab>Interests</Tab>
+                    <Tab>WakaTime</Tab>
                 </TabList>
                 <TabPanel>
                     <div>
@@ -28,6 +30,9 @@ export default function AboutPage(): JSX.Element {
                     <div>
                         <List list={interests} />
                     </div>
+                </TabPanel>
+                <TabPanel>
+                    <StaticImage className="stats-graph" alt="graph" src="./images/wakatime.svg" />
                 </TabPanel>
             </Tabs>
         </Page>
