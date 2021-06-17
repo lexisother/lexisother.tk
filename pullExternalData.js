@@ -42,10 +42,12 @@ async function run() {
 
     projects.forEach(async (project) => {
         if (project.licensename !== "No License") {
-            const licenseurl = await github.request("GET /licenses/{license}", {
-                license: project.licensekey
-            });
-            project.licenseurl = licenseurl.data.html_url;
+            if (project.licensename !== "Other") {
+                const licenseurl = await github.request("GET /licenses/{license}", {
+                    license: project.licensekey
+                });
+                project.licenseurl = licenseurl.data.html_url;
+            }
         }
 
         if (files.includes(project.name))
