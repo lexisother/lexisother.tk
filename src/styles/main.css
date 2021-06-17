@@ -23,6 +23,7 @@ html {
         color: hsl(0, 0%, 98%) !important;
     }
     .navbar-link:hover {
+        background-color: hsl(0, 0%, 23%) !important;
         color: white !important;
     }
     .avatar-image {
@@ -146,7 +147,7 @@ footer {
 }
 
 .navbar-link:hover {
-    background-color: hsl(0, 0%, 98%);
+    background-color: hsl(0, 0%, 81%);
     text-decoration: none;
 }
 
