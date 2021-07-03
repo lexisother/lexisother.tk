@@ -19,6 +19,7 @@ export const query = graphql`
                 licensename
                 licenseurl
                 forked
+                archived
                 updated
             }
         }
@@ -39,10 +40,12 @@ export default function ProjectsPage({data}: ProjectsPageProps): JSX.Element {
             licensename: node.licensename!,
             licenseurl: node.licenseurl!,
             forked: node.forked!,
+            archived: node.archived!,
             updated: node.updated!
         }))
         .sort((a, b) => Date.parse(b.updated) - Date.parse(a.updated))
-        .filter((p) => p.name !== "lexisother");
+        .filter((p) => p.name !== "lexisother")
+        .filter((p) => !p.archived);
 
     return (
         <Page title="Projects">

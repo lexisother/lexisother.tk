@@ -37,6 +37,7 @@ async function run() {
         licensename: repo.license?.name || "No License",
         licenseurl: repo.license?.url || "",
         forked: repo.fork,
+        archived: repo.archived,
         updated: repo.pushed_at
     }));
 
