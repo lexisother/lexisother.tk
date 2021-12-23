@@ -20,6 +20,7 @@ const files = fs.readdirSync(outputDirPath).map((file) => file.replace(".json", 
 async function run() {
     const github = new Octokit();
 
+    let projects = [];
     const {data: repos} = await github.repos.listForUser({
         username: "lexisother",
         type: "owner",
@@ -27,19 +28,52 @@ async function run() {
         sort: "pushed"
     });
 
-    const projects = repos.map((repo) => ({
-        name: repo.name,
-        url: repo.html_url,
-        description: repo.description,
-        stars: repo.stargazers_count || 0,
-        language: repo.language,
-        licensekey: repo.license?.key || "",
-        licensename: repo.license?.name || "No License",
-        licenseurl: repo.license?.url || "",
-        forked: repo.fork,
-        archived: repo.archived,
-        updated: repo.pushed_at
-    }));
+    const extraProjectsList = [
+        "Cumcord/Cumcord",
+        "Cumcord/Impregnate",
+        "Cumcord/linear-viewer",
+        "keanuplayz/TravBot-v3"
+
+        // Uncomment if I ever decide to release this crap (a.k.a. never)
+        // "FlickerMod/flicker"
+    ];
+    for (let project of extraProjectsList) {
+        const [owner, name] = project.split("/");
+        let {data} = await github.repos.get({
+            owner: owner,
+            repo: name
+        });
+
+        projects.push({
+            name: data.name,
+            url: data.html_url,
+            description: data.description,
+            stars: data.stargazers_count || 0,
+            language: data.language,
+            licensekey: data.license?.key || "",
+            licensename: data.license?.name || "No License",
+            licenseurl: data.license?.url || "",
+            forked: data.fork,
+            archived: data.archived,
+            updated: data.pushed_at
+        });
+    }
+
+    projects.push(
+        ...repos.map((repo) => ({
+            name: repo.name,
+            url: repo.html_url,
+            description: repo.description,
+            stars: repo.stargazers_count || 0,
+            language: repo.language,
+            licensekey: repo.license?.key || "",
+            licensename: repo.license?.name || "No License",
+            licenseurl: repo.license?.url || "",
+            forked: repo.fork,
+            archived: repo.archived,
+            updated: repo.pushed_at
+        }))
+    );
 
     projects.forEach(async (project) => {
         if (project.licensename !== "No License") {
