@@ -18,7 +18,10 @@ const outputDirPath = path.resolve("./data/projects/");
 const files = fs.readdirSync(outputDirPath).map((file) => file.replace(".json", ""));
 
 async function run() {
-    const github = new Octokit();
+    console.log(`Authenticating to GitHub with token: ${process.env.TOKEN}`);
+    const github = new Octokit({
+        auth: process.env.TOKEN
+    });
 
     let projects = [];
     const {data: repos} = await github.repos.listForUser({
@@ -31,8 +34,19 @@ async function run() {
     const extraProjectsList = [
         "Cumcord/Cumcord",
         "Cumcord/Impregnate",
+        "Cumcord/STD",
         "Cumcord/linear-viewer",
-        "keanuplayz/TravBot-v3"
+
+        "Cumglue/cc-rust-binds",
+
+        "AlyPlugs/CumcordLoader",
+        "AlyPlugs/DevMode",
+        "AlyPlugs/QuickCSS",
+
+        "keanuplayz/TravBot-v3",
+        "keanuplayz/dotfiles",
+
+        "CCDirectLink/c2dl-web"
 
         // Uncomment if I ever decide to release this crap (a.k.a. never)
         // "FlickerMod/flicker"
@@ -55,7 +69,9 @@ async function run() {
             licenseurl: data.license?.url || "",
             forked: data.fork,
             archived: data.archived,
-            updated: data.pushed_at
+            updated: data.pushed_at,
+            owner: owner,
+            external: true
         });
     }
 

@@ -21,6 +21,8 @@ export const query = graphql`
                 forked
                 archived
                 updated
+                owner
+                external
             }
         }
     }
@@ -41,7 +43,9 @@ export default function ProjectsPage({data}: ProjectsPageProps): JSX.Element {
             licenseurl: node.licenseurl!,
             forked: node.forked!,
             archived: node.archived!,
-            updated: node.updated!
+            updated: node.updated!,
+            owner: node.owner!,
+            external: node.external!
         }))
         .sort((a, b) => Date.parse(b.updated) - Date.parse(a.updated))
         .filter((p) => p.name !== "lexisother")
@@ -57,7 +61,9 @@ export default function ProjectsPage({data}: ProjectsPageProps): JSX.Element {
                 projects.map((project) => (
                     <div key={project.name} className="entry">
                         <div className="entry-name">
-                            <Link href={project.url}>{project.name}</Link>
+                            <Link href={project.url}>
+                                {project.external ? `${project.owner}/${project.name}` : project.name}
+                            </Link>
                         </div>
 
                         <div className="entry-description">{project.description}</div>
