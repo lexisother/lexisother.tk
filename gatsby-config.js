@@ -67,9 +67,6 @@ module.exports = {
                     linkImagesToOriginal: false
                 }),
 
-                // Zoom for images
-                resolvePlugin("gatsby-remark-images-zoom"),
-
                 // Syntax highlighting
                 resolvePlugin("gatsby-remark-prismjs", {
                     classPrefix: "language-",

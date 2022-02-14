@@ -49,13 +49,13 @@ export default function HomePage(): JSX.Element {
                 </p>
 
                 <p>
-                    Most of my work is in TypeScript, but every now and then I play around with Python. I'm mostly
-                    interested in Discord bot development / client modifications, and web applications.
+                    Most of my work is in TypeScript, though I've been picking up PHP. I'm mostly interested in Discord
+                    bot development / client modifications, and web applications.
                 </p>
 
                 <p>
                     Although my work isn't all that professional, aside from software development, I'm also into
-                    composing music, playing the piano and guitar and photography.
+                    composing music, playing the piano and the guitar.
                 </p>
             </div>
 

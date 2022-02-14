@@ -8,7 +8,7 @@ import Link from "./shared/Link";
 import Page from "./shared/Page";
 
 export const query = graphql`
-    query($slug: String!, $coverImagePath: String!) {
+    query ($slug: String!, $coverImagePath: String!) {
         markdownRemark(fields: {slug: {eq: $slug}}) {
             frontmatter {
                 title
