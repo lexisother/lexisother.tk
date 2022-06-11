@@ -1,5 +1,4 @@
 import {graphql} from "gatsby";
-import React from "react";
 import {FiPackage} from "react-icons/fi";
 import {GiInjustice} from "react-icons/gi";
 import Page from "./shared/Page";
@@ -11,9 +10,7 @@ export const query = graphql`
             nodes {
                 name
                 version
-                packageJson {
-                    license
-                }
+                packageJson
             }
         }
     }

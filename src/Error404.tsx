@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "./shared/Link";
 import Page from "./shared/Page";
 

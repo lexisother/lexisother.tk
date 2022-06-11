@@ -3,6 +3,7 @@
 .prettierignore
 .eslintignore
 .husky/
+.idea/
 LICENSE
 
 # Specific to this repository

@@ -1,6 +1,5 @@
 import {formatDistanceToNow as distance} from "date-fns";
 import {graphql} from "gatsby";
-import React from "react";
 import {AiOutlineFork} from "react-icons/ai";
 import {FiPackage} from "react-icons/fi";
 import {GiInjustice} from "react-icons/gi";

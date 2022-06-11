@@ -1,4 +1,3 @@
-import React from "react";
 import {genid} from "../infra/utils";
 
 const ListItem = ({item}: {item: Data}): JSX.Element => (

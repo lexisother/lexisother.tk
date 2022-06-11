@@ -1,7 +1,7 @@
 import {Octokit} from "@octokit/rest";
 import {differenceInYears, format as formatDate} from "date-fns";
 import {StaticImage} from "gatsby-plugin-image";
-import React, {useEffect, useState} from "react";
+import {useEffect, useState} from "react";
 import {FiGithub, FiTwitter} from "react-icons/fi";
 import Link from "./shared/Link";
 import Page from "./shared/Page";

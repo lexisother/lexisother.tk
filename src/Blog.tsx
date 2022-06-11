@@ -1,6 +1,5 @@
 import {compareDesc as compareDatesDesc, format as formatDate, formatDuration} from "date-fns";
 import {graphql} from "gatsby";
-import React from "react";
 import {FiCalendar, FiClock, FiTag} from "react-icons/fi";
 import Link from "./shared/Link";
 import Page from "./shared/Page";
