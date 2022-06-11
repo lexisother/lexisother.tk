@@ -1,3 +1,4 @@
+import React from "react";
 import {formatDistanceToNow as distance} from "date-fns";
 import {graphql} from "gatsby";
 import {AiOutlineFork} from "react-icons/ai";

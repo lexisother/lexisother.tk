@@ -1,3 +1,4 @@
+import React from "react";
 import {format as formatDate, formatDuration} from "date-fns";
 import {graphql} from "gatsby";
 import {GatsbyImage, getSrc} from "gatsby-plugin-image";

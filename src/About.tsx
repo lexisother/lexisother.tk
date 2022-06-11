@@ -1,3 +1,4 @@
+import React from "react";
 import {StaticImage} from "gatsby-plugin-image";
 import {Tab, TabList, TabPanel, Tabs} from "react-tabs";
 import "react-tabs/style/react-tabs.css";

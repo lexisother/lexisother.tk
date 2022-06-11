@@ -1,3 +1,4 @@
+import React from "react";
 import {graphql} from "gatsby";
 import {FiPackage} from "react-icons/fi";
 import {GiInjustice} from "react-icons/gi";
