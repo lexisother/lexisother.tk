@@ -6,6 +6,11 @@ tags:
   - 'dutch'
 ---
 
+<!--
+NOTES:
+    - To reach one minute of reading length, one must write a project description of around a thousand characters.
+-->
+
 Na een jaar op deze opleiding gezeten te hebben, heb ik ondervonden dat dit toch echt wel *de* opleiding voor mij is.
 
 Ik heb het oprecht naar mijn zin gehad met mijn mede-studenten en docenten.
@@ -21,6 +26,15 @@ Nu, om even alles samen te vatten, ga ik in deze post aan de hand van de volgend
 
 ---
 
+<!-- TODO: Fit this into some header -->
+
+Ik ben een aantal docenten langs gegaan om mij te vertellen waarom ik een positief studieadvies verdien.
+
+Volgens Fred is mijn karakter veel vooruit gegaan. Het ging hem dus niet zo veel om de prestaties in projecten, maar om mijn personaliteit en manier van werken.
+Tuurlijk waren er dingen waar hij aan moest wennen (zoals mijn code-commentaar<!-- speaking of, hi! -->), maar dat is uiteindelijk wel gelukt.
+
+---
+
 ## Projecten
 
 ### [GDOS-Website](https://github.com/lexisother/GDOS-Website)
@@ -31,6 +45,18 @@ Gevuld met functies waar niemand om had gevraagd, maar die in wezen voldeden aan
 Met dynamisch gegenereerde pagina's die worden aangedreven door het krachtige Gatsby-framework dat is gericht op snelheid die het begrip te boven gaat, volledige blogfunctionaliteit voor zowel docenten als studenten, zodat docenten belangrijke aankondigingen kunnen plaatsen en studenten schoolgerelateerde dingen kunnen posten die ze hebben gemaakt.
 
 ### [GDOS-Portal-App](https://github.com/lexisother/GDOS-Portal-App)
+
+Als het volledig ongevraagde project dat ik voor de eerste periode van het schooljaar heb gemaakt, is de GDOS Portal-app het toppunt van de ontwikkeling van mobiele apps.
+Gebouwd met het Jetpack Compose Android-framework, staat het als een van de meest nutteloze projecten die ik voor school heb gebouwd. Ooit.
+
+Ik ben de redenering achter mijn motivatie om deze app te bouwen kwijt.
+Ik denk dat het iets was in de trant van "we moeten een website bouwen voor ons pseudo-bedrijf, dus ik kan er net zo goed een app bij bouwen!"
+
+Ik wist niet dat de manier van werken zulke sporadische ideeën niet toestond.
+Volgens de bedrijfsnormen (zoals binnen veel bedrijfsentiteiten), is het handig om eventuele plannen die je hebt met de betrokken mensen te bespreken voordat je daadwerkelijk actie onderneemt op basis van je slechte ideeën.
+
+Dat wist ik echter niet. Dat was overduidelijk. Dus ik heb het toch gebouwd!
+Met een functieset in het achterhoofd, waaronder inloggen op je bedrijfsaccount, in- en uitklokken van je dienst, het bekijken van een persoonlijke takenlijst en nog veel meer, begon ik aan mijn reis om deze vreselijk ingewikkelde (maar nuttige!) app te bouwen.
 
 ### [GDOS-Website-PHP](https://github.com/lexisother/GDOS-Website-PHP)
 
