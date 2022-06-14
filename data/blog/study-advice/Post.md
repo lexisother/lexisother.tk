@@ -39,26 +39,61 @@ Tuurlijk waren er dingen waar hij aan moest wennen (zoals mijn code-commentaar<!
 
 ### [GDOS-Website](https://github.com/lexisother/GDOS-Website)
 
-Als eerste project dat ik voor deze opleiding heb gebouwd, moet ik zeggen dat het beter is geworden dan ik had verwacht.
-Gevuld met functies waar niemand om had gevraagd, maar die in wezen voldeden aan de criteria die het project had.
+Als het eerste project dat ik voor deze opleiding heb gebouwd, moet ik zeggen dat het beter is geworden dan ik had verwacht.
+Gevuld met functies waar niemand om vroeg, maar die in wezen voldeden aan de criteria die het project had.
 
-Met dynamisch gegenereerde pagina's die worden aangedreven door het krachtige Gatsby-framework dat is gericht op snelheid die het begrip te boven gaat, volledige blogfunctionaliteit voor zowel docenten als studenten, zodat docenten belangrijke aankondigingen kunnen plaatsen en studenten schoolgerelateerde dingen kunnen posten die ze hebben gemaakt.
+Met dynamisch gegenereerde pagina's aangedreven door het krachtige Gatsby-framework gericht op snelheid die het begrip te boven gaat, volledige blogfunctionaliteit voor zowel docenten als studenten, en nog veel meer.
+
+Het was bedoeld om geweldig te zijn.
+Vergezeld van een bijbehorende telefoon-app, zou het de hoofdportal voor ons onderwijs zijn geweest, waardoor docenten en studenten hun mening over onderwerpen konden delen, docenten de mogelijkheid zouden hebben om aankondigingen en opdrachten te plaatsen, en studenten een manier zouden bieden om te pronken met hun vaardigheden of te schrijven over iets wat hen interesseert.
+
+Ik heb toen een hele presentatie voorbereid voor een groep van vier van mijn belangrijkste IT-leraren.
+De voorbereiding en het regelen kostte een aanzienlijk deel van mijn tijd die ik had kunnen besteden aan wat in de ogen van mijn leraren belangrijkere dingen zijn.
+Ik het lukte me echter en ik kreeg de presentatie die ik wilde. Ik vertelde over mijn plannen om mijn idee verder uit te werken.
+Ze waren enthousiast. Verrassend (en enigszins verontrustend) genoeg.
+Een van hen beloofde dit idee door te geven aan de hogere kringen. Tot op de dag van vandaag weet ik niet of dit waar is.
+
+Zoals verwacht, kwam er niets van mijn ideeën. Ze werden ofwel genegeerd of vergeten.
+Ik heb mijn tijd verspild met het maken van iets waar ik (toen) erg trots op was.
+Maar goed, dat is nu verleden tijd.
 
 ### [GDOS-Portal-App](https://github.com/lexisother/GDOS-Portal-App)
 
 Als het volledig ongevraagde project dat ik voor de eerste periode van het schooljaar heb gemaakt, is de GDOS Portal-app het toppunt van de ontwikkeling van mobiele apps.
 Gebouwd met het Jetpack Compose Android-framework, staat het als een van de meest nutteloze projecten die ik voor school heb gebouwd. Ooit.
 
-Ik ben de redenering achter mijn motivatie om deze app te bouwen kwijt.
-Ik denk dat het iets was in de trant van "we moeten een website bouwen voor ons pseudo-bedrijf, dus ik kan er net zo goed een app bij bouwen!"
+De motivatie achter het bouwen van deze app was de tandem-werking samen met de GDOS Website. Het zou een snelle manier zijn om toegang te krijgen tot je persoonlijke data binnen het systeem.
 
-Ik wist niet dat de manier van werken zulke sporadische ideeën niet toestond.
+Ik wist echter niet dat de manier van werken op de opleiding zulke sporadische ideeën niet toestond.
 Volgens de bedrijfsnormen (zoals binnen veel bedrijfsentiteiten), is het handig om eventuele plannen die je hebt met de betrokken mensen te bespreken voordat je daadwerkelijk actie onderneemt op basis van je slechte ideeën.
 
-Dat wist ik echter niet. Dat was overduidelijk. Dus ik heb het toch gebouwd!
+Dat wist ik dus niet. Dat was overduidelijk. Maar ik heb het toch gedaan!
 Met een functieset in het achterhoofd, waaronder inloggen op je bedrijfsaccount, in- en uitklokken van je dienst, het bekijken van een persoonlijke takenlijst en nog veel meer, begon ik aan mijn reis om deze vreselijk ingewikkelde (maar nuttige!) app te bouwen.
 
+Dat lukte me. Uiteindelijk heb ik behalve de schaamte van uitgespuugd te worden midden in de klas, niks hieraan gehad.
+
 ### [GDOS-Website-PHP](https://github.com/lexisother/GDOS-Website-PHP)
+
+Met het aanbreken van periode 2 moesten we nu een enorme verandering van plannen doorvoeren.
+We kregen nu de taak om een contactformulier op onze website te implementeren, zodat medewerkers om hulp konden vragen.
+
+Weet je nog hoe ik zei dat ik mijn website met Gatsby had gebouwd?
+Gatsby genereert statische pagina's. Dit betekent dat er geen interactiviteit of dynamische updates van pagina's kunnen zijn.
+Als ik bijvoorbeeld gegevens uit een database wilde ophalen (zoals een tabel met alle inzendingen van het contactformulier), zou ik de hele website opnieuw moeten genereren om de gegevens op te halen.
+
+Niet optimaal. Een andere eis was dat de website gebouwd moest worden in PHP.
+Dus ik moest alle oude plannen afschaffen en de hele website opnieuw maken.
+
+Maak kennis met Laravel, simpelweg het beste PHP-framework dat er is.
+Met eenvoudige methoden om gegevens op te halen en naar een database te schrijven, pagina's te beheren, integraties met veel softwarebibliotheken van derden, was dit de beste keuze die ik had kunnen maken.
+
+Er werd echter naar me geschreeuwd voor het maken van deze keuze.
+Volgens docenten creëerde ik een onveilige leeromgeving voor mijn leeftijdsgenoten.
+Ik nam hun kansen om te leren weg, hun kansen om hun vaardigheden op natuurlijke wijze te verbeteren. Ook al stonden ze bewust achter mij.
+De rest van de periode bleef ik doen waar ik mee bezig was.
+Het was het simpelweg niet waard om opnieuw te beginnen. Er werd nog ongeveer twee keer tegen me geschreeuwd, maar ik liet het gewoon over me heen gaan.
+
+Al met al is dit misschien wel een van de meest betekenisvolle en monumentale projecten van het jaar.
 
 ## Studiehouding
 

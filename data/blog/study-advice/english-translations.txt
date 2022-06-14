@@ -1,0 +1,55 @@
+### GDOS-Website
+
+As the first project I built for this education, I have to say that it turned out better than I expected.
+Filled with features no one asked for, but ones that essentially met the criteria the project had.
+
+Featuring dynamically generated pages powered by the powerful Gatsby framework focused on speed beyond comprehension, full blogging functionality for both educators and students, and much more.
+
+It was meant to be great.
+Accompanied by a companion phone app, it would've been the main portal for our education, allowing teachers and students alike to share their thoughts on subjects, giving teachers the opportunity to post announcements and assignments, and students a way to show off their skills or do write-ups on whatever interests them.
+
+I prepared an entire presentation for a set of four of my main IT teachers.
+The preparation and arrangement took a significant chunk of my time which I could've spent doing -- what are in the eyes of my teachers -- more important things.
+However, I prevailed and got the presentation I wanted. I talked about my plans to further develop my idea.
+They were enthusiastic. Surprisingly (and somewhat unsettlingly) enough.
+One of them promised to pass this idea along to the higher ups. To this day I don't know if this is true.
+
+As expected, nothing came of my ideas. They were either ignored or were forgotten about.
+I wasted my time making something I was (at the time) very proud of.
+But oh well, that's in the past now.
+
+### GDOS-Portal-App
+
+Being the completely un-asked for project I made for the first period of the school year, the GDOS Portal app is the pinnacle of mobile-app development.
+Built with the Jetpack Compose Android framework, it stands as one of the most useless projects I've built for school. Ever.
+
+I've lost the reasoning behind my motivation to build this app.
+I think it was something along the lines of "we have to build a website for our pseudo-company, so I might as well build an app to go along with it!"
+
+Little did I know the way of working didn't allow such sporadic ideas.
+s per company-standards (like within many corporate entities), it is recommended you discuss any plans you have with the involved people before actually taking actions on your ideas.
+
+However, I didn't know that. Clearly. So I built it anyways!
+With in mind, a featureset that included logging into your company account, clocking in and out of your shift, viewing a personal to-do list, and much more, I set afoot on my journey of building this terribly overcomplicated (but useful!) app.
+
+I succeeded. In the end, other than the embarrassment of being spat out in the middle of the class, this was of no use to me.
+
+### GDOS-Website-PHP
+
+With the dawn of P2, we now had to make a massive change of plans.
+We were now tasked of implementing a contact form into our website so employees could ask for assistance.
+
+Now, remember how I said I built my website with Gatsby?
+Gatsby generates static pages. This means there can be no interactivity or dynamic updates to pages. For example, if I wanted to fetch data from a database (like a table of all contact form submissions), I would need to regenerate the entire website just to fetch the data.
+
+Not optimal. Another one of the requirements was that the website had to be built in PHP.
+So I had to abolish all old plans and recreate the whole website from scratch.
+
+Meet Laravel, simply the best PHP framework around.
+With easy methods to fetch and write data to a database, management of pages, integrations with many third-party software libraries, it was the best choice I could've made.
+
+However, I got yelled at for it.
+According to teachers, I was creating an unsafe learning environment for my peers. I took away their chances to learn, their opportunities to improve their skill naturally. Even though they were consciously taking their stand behind me.
+I carried on doing what I was doing for the rest of the period. It wasn't worth starting over. I was yelled at two more times, but I just let it pass right over me.
+
+All in all, this might be one of the most meaningful and monumental projects of the year.
