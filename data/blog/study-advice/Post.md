@@ -1,6 +1,6 @@
 ---
 title: 'Mijn positief studieadvies'
-date: '2022-06-09'
+date: '2022-06-15'
 tags:
   - 'school'
   - 'dutch'
@@ -32,6 +32,11 @@ Ik ben een aantal docenten langs gegaan om mij te vertellen waarom ik een positi
 
 Volgens Fred is mijn karakter veel vooruit gegaan. Het ging hem dus niet zo veel om de prestaties in projecten, maar om mijn personaliteit en manier van werken.
 Tuurlijk waren er dingen waar hij aan moest wennen (zoals mijn code-commentaar<!-- speaking of, hi! -->), maar dat is uiteindelijk wel gelukt.
+
+Volgens Daan ben ik ontzettend vooruit gegaan sinds periode 1. Zoals bij alle docenten bekend is, zat ik rond die tijd erg veel met mijn koptelefoon op ijverig te werken.
+Hierdoor was ik echter onaanspreekbaar en hadden docenten dus moeite om me te peilen. Daan vind dat dit erg is bijgetrokken.
+Verder zei hij dat ik erg de neiging had om te veel te doen voor opdrachten. Het gebruik van frameworks, het bouwen van zuster-projecten rond een groot project, dat soort dingen.
+Maar, dat is uiteindelijk ook bijgetrokken. (ookal moet ik zelf zeggen dat ik altijd nog de neiging heb om een extra stap te nemen om het leuk te houden voor mezelf)
 
 ---
 
