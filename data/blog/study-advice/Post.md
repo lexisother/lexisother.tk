@@ -26,7 +26,7 @@ Nu, om even alles samen te vatten, ga ik in deze post aan de hand van de volgend
 
 ---
 
-<!-- TODO: Fit this into some header -->
+## Meningen docenten
 
 Ik ben een aantal docenten langs gegaan om mij te vertellen waarom ik een positief studieadvies verdien.
 
@@ -37,6 +37,11 @@ Volgens Daan ben ik ontzettend vooruit gegaan sinds periode 1. Zoals bij alle do
 Hierdoor was ik echter onaanspreekbaar en hadden docenten dus moeite om me te peilen. Daan vind dat dit erg is bijgetrokken.
 Verder zei hij dat ik erg de neiging had om te veel te doen voor opdrachten. Het gebruik van frameworks, het bouwen van zuster-projecten rond een groot project, dat soort dingen.
 Maar, dat is uiteindelijk ook bijgetrokken. (ookal moet ik zelf zeggen dat ik altijd nog de neiging heb om een extra stap te nemen om het leuk te houden voor mezelf)
+
+Volgens Niels ben ik rededelijk makkelijk door het traject heengegaan.
+Ik ben vooruitgegaan in mijn manier van werken, omdat ik mijn eigen koppigheid laat liggen en andere zijpaden bewandel.
+Verder heb ik een goede ontwikkeling gehad, omdat ik tegewoordig een stuk serieuzer werk en respect heb opgebouwd voor collega's, bijvoorbeeld als een docent mij advies geeft voor iets op een andere manier te doen, of meer interesse te tonen tijdens de les.
+Als ik een belemmering ben in het werk van anderen kan ik de kritiek goed opvangen en probeer ik mezelf natuurlijk te verbeteren.
 
 ---
 
