@@ -9,6 +9,7 @@ tags:
 <!--
 NOTES:
     - To reach one minute of reading length, one must write a project description of around a thousand characters.
+    - There is a chance nobody will ever read these notes. To whoever does: hi <3
 -->
 
 Na een jaar op deze opleiding gezeten te hebben, heb ik ondervonden dat dit toch echt wel *de* opleiding voor mij is.
@@ -16,13 +17,14 @@ Na een jaar op deze opleiding gezeten te hebben, heb ik ondervonden dat dit toch
 Ik heb het oprecht naar mijn zin gehad met mijn mede-studenten en docenten.
 Ook al is niet alles soepel verlopen (zie: aangetekende brief), moet ik toch toegeven dat ik goed door het jaar heen ben gekomen.
 
-Nu, om even alles samen te vatten, ga ik in deze post aan de hand van de volgende onderwerpen mijn beredenering geven over waarom ik een positief studieadvies verdien:
+Nu, om even alles samen te vatten, ga ik in deze post aan de hand van de volgende stukken laten zien waarom ik een positief studieadvies verdien:
 
+- meningen docenten
+- projecten
 - studiehouding
 - beroepshouding
 - schoolresultaten
 - motivatie
-- attesten
 
 ---
 
@@ -30,17 +32,23 @@ Nu, om even alles samen te vatten, ga ik in deze post aan de hand van de volgend
 
 Ik ben een aantal docenten langs gegaan om mij te vertellen waarom ik een positief studieadvies verdien.
 
+### Fred
+
 Volgens Fred is mijn karakter veel vooruit gegaan. Het ging hem dus niet zo veel om de prestaties in projecten, maar om mijn personaliteit en manier van werken.
 Tuurlijk waren er dingen waar hij aan moest wennen (zoals mijn code-commentaar<!-- speaking of, hi! -->), maar dat is uiteindelijk wel gelukt.
+
+### Daan
 
 Volgens Daan ben ik ontzettend vooruit gegaan sinds periode 1. Zoals bij alle docenten bekend is, zat ik rond die tijd erg veel met mijn koptelefoon op ijverig te werken.
 Hierdoor was ik echter onaanspreekbaar en hadden docenten dus moeite om me te peilen. Daan vind dat dit erg is bijgetrokken.
 Verder zei hij dat ik erg de neiging had om te veel te doen voor opdrachten. Het gebruik van frameworks, het bouwen van zuster-projecten rond een groot project, dat soort dingen.
-Maar, dat is uiteindelijk ook bijgetrokken. (ookal moet ik zelf zeggen dat ik altijd nog de neiging heb om een extra stap te nemen om het leuk te houden voor mezelf)
+Maar, dat is uiteindelijk ook bijgetrokken. (ook al moet ik zelf zeggen dat ik altijd nog de neiging heb om een extra stap te nemen om het leuk te houden voor mezelf)
 
-Volgens Niels ben ik rededelijk makkelijk door het traject heengegaan.
+### Niels
+
+Volgens Niels ben ik redelijk makkelijk door het traject heengegaan.
 Ik ben vooruitgegaan in mijn manier van werken, omdat ik mijn eigen koppigheid laat liggen en andere zijpaden bewandel.
-Verder heb ik een goede ontwikkeling gehad, omdat ik tegewoordig een stuk serieuzer werk en respect heb opgebouwd voor collega's, bijvoorbeeld als een docent mij advies geeft voor iets op een andere manier te doen, of meer interesse te tonen tijdens de les.
+Verder heb ik een goede ontwikkeling gehad, omdat ik tegenwoordig een stuk serieuzer werk en respect heb opgebouwd voor collega's, bijvoorbeeld als een docent mij advies geeft voor iets op een andere manier te doen, of meer interesse te tonen tijdens de les.
 Als ik een belemmering ben in het werk van anderen kan ik de kritiek goed opvangen en probeer ik mezelf natuurlijk te verbeteren.
 
 ---
@@ -105,24 +113,34 @@ Het was het simpelweg niet waard om opnieuw te beginnen. Er werd nog ongeveer tw
 
 Al met al is dit misschien wel een van de meest betekenisvolle en monumentale projecten van het jaar.
 
+---
+
 ## Studiehouding
 
 Mijn houding en gedrag laat soms het tegenovergestelde zien van wat mijn inzet is. Mijn inzet is daarentegen 135%. Die 35% mag ik gewoon niet altijd van mijn docenten laten zien.
 
+Dit is natuurlijk voor al te goede redenen. (zie het commentaar van Niels)
+
 ## Beroepshouding
 
-Ik ben van mening dat mijn beroepshouding ruim voldoende is. Al is mij nooit duidelijk gemaakt welke houding nou precies bedoeld wordt.
+Ik ben van mening dat mijn beroepshouding ruim voldoende is. Al is mij nooit op een concrete manier duidelijk gemaakt welke houding nou precies bedoeld wordt.
 
-Mijn doel is in elk geval om mij professioneel genoeg op te stellen voor het behalen van het juiste resultaat.
+Mijn doel is in elk geval om mij professioneel genoeg op te stellen voor het behalen van het juiste resultaat. Ik hoop natuurlijk dat dit ook is gelukt.
 
 ## Schoolresultaten
 
-Mijn scores en beoordelingen zijn voldoende en zit met mijn planning en uitvoering altijd op schema.
+Mijn scores en beoordelingen zijn voldoende en zit met mijn planning en uitvoering (bijna) altijd op schema.
 
 ## Motivatie
 
-Mijn motivatie is zonder schrammen door willen gaan naar het volgende schooljaar. En het diploma wil graag binnen het termijn van 4 jaar halen.
+Mijn motivatie is zonder schrammen door willen gaan naar het volgende schooljaar, en het diploma graag binnen het termijn van 4 jaar wil halen.
 
-<img alt="MOTIVATED" src="https://media.discordapp.net/attachments/824921608560181261/984901981372030976/IMG_20220610_153600.jpg" height="160" width="300"/>
+Verder vind ik het gewoon leuk om te doen wat ik doe. Ik kan mijn creatieve vrijheid uiten, waar ik eerst de kans niet voor kreeg.
 
-## Attesten
+<img title="MOTIVATED" alt="MOTIVATED" src="https://media.discordapp.net/attachments/824921608560181261/984901981372030976/IMG_20220610_153600.jpg" height="160" width="300"/>
+
+## Conclusie
+
+Ik heb eigenlijk geen flauw idee waarom ik een groep docenten moet overtuigen waarom ik het jaar positief mag beëindigen. Ik was meer in de veronderstelling dat dit toch echt een onderwerp was waar de docenten meer over wisten dan ikzelf.
+
+Er zal vast wel weer een of andere abstracte reden achter zitten waar ik te kortzichtig voor ben om hem te snappen, maar het zal wel. Ik mag hopen dat dit nu bekant genoeg tekst is.
