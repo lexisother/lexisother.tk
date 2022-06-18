@@ -67,14 +67,12 @@ export const plugins = [
     resolvePlugin("gatsby-plugin-feed", {
         feeds: [
             {
-                // @ts-expect-error: I have no idea what the type is
-                serialize: ({query: {allMarkdownRemark}}) => {
-                    // @ts-expect-error: I have no idea what the type is
+                serialize: ({query: {allMarkdownRemark}}: {query: {allMarkdownRemark: GatsbyTypes.MarkdownRemarkConnection}}) => {
                     return allMarkdownRemark.edges.map((edge) => ({
                         ...edge.node.frontmatter,
                         description: edge.node.excerpt,
-                        url: resolveRelativeUrl("/blog/" + edge.node.fields.slug),
-                        guid: resolveRelativeUrl("/blog/" + edge.node.fields.slug)
+                        url: resolveRelativeUrl("/blog/" + edge.node.fields!.slug),
+                        guid: resolveRelativeUrl("/blog/" + edge.node.fields!.slug)
                     }));
                 },
                 query: `
@@ -122,5 +120,8 @@ export const plugins = [
     resolvePlugin("gatsby-plugin-sitemap"),
     resolvePlugin("gatsby-plugin-robots-txt"),
     resolvePlugin("gatsby-plugin-offline"),
-    resolvePlugin("gatsby-plugin-typegen")
+    resolvePlugin("gatsby-plugin-typegen"),
+    resolvePlugin("gatsby-plugin-exclude", {
+        paths: ['/src/__generated__']
+    })
 ];
