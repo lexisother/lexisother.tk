@@ -5,6 +5,7 @@ const {Octokit} = require("@octokit/rest");
 const fs = require("fs");
 const path = require("path");
 const start = require("./scripts/start");
+const {throttling} = require("@octokit/plugin-throttling");
 
 console.log("Generating Wakatime SVG...");
 start();
@@ -19,8 +20,21 @@ const files = fs.readdirSync(outputDirPath).map((file) => file.replace(".json", 
 
 async function run() {
     console.log(`Authenticating to GitHub with token: ${process.env.TOKEN}`);
-    const github = new Octokit({
-        auth: process.env.TOKEN
+    const MyOctokit = Octokit.plugin(throttling);
+    const github = new MyOctokit({
+        auth: process.env.TOKEN,
+        throttle: {
+            onRateLimit: (retryAfter, options, octokit) => {
+                octokit.log.warn(`Request quota exhausted for request ${options.method} ${options.url}`);
+                octokit.log.info(`Retrying after ${retryAfter} seconds!`);
+                return true;
+            },
+            onSecondaryRateLimit: (retryAfter, options, octokit) => {
+                octokit.log.warn(`Request quota exhausted for request ${options.method} ${options.url}`);
+                octokit.log.info(`Retrying after ${retryAfter} seconds!`);
+                return true;
+            }
+        }
     });
 
     let projects = [];
@@ -31,26 +45,7 @@ async function run() {
         sort: "pushed"
     });
 
-    const extraProjectsList = [
-        "Cumcord/Cumcord",
-        "Cumcord/Impregnate",
-        "Cumcord/STD",
-        "Cumcord/linear-viewer",
-
-        "Cumglue/cc-rust-binds",
-
-        "AlyPlugs/CumcordLoader",
-        "AlyPlugs/DevMode",
-        "AlyPlugs/QuickCSS",
-
-        "keanuplayz/TravBot-v3",
-        "keanuplayz/dotfiles",
-
-        "CCDirectLink/c2dl-web"
-
-        // Uncomment if I ever decide to release this crap (a.k.a. never)
-        // "FlickerMod/flicker"
-    ];
+    const extraProjectsList = JSON.parse(fs.readFileSync("./data/extraprojects.json").toString());
     for (let project of extraProjectsList) {
         const [owner, name] = project.split("/");
         let {data} = await github.repos.get({

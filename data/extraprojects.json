@@ -1,0 +1,24 @@
+[
+  "Cumcord/Cumcord",
+  "Cumcord/Impregnate",
+  "Cumcord/STD",
+  "Cumcord/linear-viewer",
+  "Cumcord/typings",
+
+  "Cumglue/cc-rust-binds",
+
+  "Cordwood/Cordwood",
+  "Cordwood/cli",
+
+  "AlyPlugs/CumcordLoader",
+  "AlyPlugs/DevMode",
+  "AlyPlugs/QuickCSS",
+
+  "ArmCord/ArmCord",
+
+  "keanuplayz/TravBot-v3",
+  "keanuplayz/dotfiles",
+
+  "CCDirectLink/c2dl-web",
+  "Quartic-Impact/Quartic-Impact"
+]
